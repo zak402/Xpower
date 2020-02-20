@@ -1,0 +1,197 @@
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="demo/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+    /*----------- reset ---------------*/
+    .btn-primary{
+        background:#00c2e8;
+        color:#fff;
+        text-align:center;
+        border-radius:3px;
+        margin:auto;
+        box-shadow: 0 0px 10px #00c2e8;
+        border:none;
+        padding: 0.8rem 2.7rem;
+    }
+    .btn-primary:hover{
+        color:#000;
+        background:#fff;
+    }
+    /*----------- end reset ---------------*/
+
+    /*----------- navbar ---------------*/
+
+    #buy-now{
+        background:#00c2e8;
+        width:130px;
+        text-align:center;
+        border-radius:3px;
+        margin:auto;
+        box-shadow: 0 0px 10px #00c2e8;
+        border:none;
+        color:#fff;
+    }
+    #buy-now:hover{
+        color:#00c2e8;
+        background:#fff;
+    }
+    /*----------- end navbar --------------*/
+
+    .logo{
+        background:#000;
+        padding:20px 0px;
+    }
+    .logo a{
+        color:#fff;
+        font-weight: bold;
+        font-size:30px;
+    }
+    .logo a svg path{
+        fill:#00c2e8;
+    }
+    /*----------- header --------------*/
+    .header{
+        background:url('./demo/img/header.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding:160px 0px;
+    }
+
+    .header .header-content h2{
+        color:#fff;
+        font-size:72px;
+        max-width: 700px;  
+        font-family: 'Montserrat', sans-serif;
+    }
+    .header .header-content p{
+        color:#fff;
+        max-width: 450px; 
+        margin:40px 0px 30px 0px; 
+        line-height:30px;
+        margin:40px 0 20px 0;
+        font-size:18px;
+    }
+    @media(max-width:768px)
+    {
+        .header{
+            text-align: center;
+        }
+        .header .header-content h2{
+            font-size:50px;
+        }
+        .header .header-content p{
+            margin:20px auto 20px auto;
+        }
+    }
+    @media(max-width:992px){
+        .header{
+            padding:100px 0px;
+        }
+    }
+    @media(max-width:552px){
+        .header{
+            background-position:center;
+            padding:100px 0px;
+        }
+        .header .header-content h2{
+            font-size:35px;
+            max-width: 800px;  
+        }
+    }
+    /*----------- end header --------------*/
+
+    .demo{
+        padding:150px 0px 100px 0px;
+        background:#000;
+        text-align:center;
+    }
+    .demo img{
+        border:1px solid #222;
+        border-radius:5px;
+        cursor: pointer;
+    }
+    .demo h4{
+        color:#fff;
+        margin-top:10px;
+    }
+
+    /*----------- video --------------*/
+    .video{
+        background:#000;
+        padding:20px 200px;
+    }
+    .video iframe{
+        border:1px solid #222;
+        border-radius:5px;
+        width:100%;
+        height:500px;
+    }
+    @media(max-width:992px){
+        .video{
+        padding:30px;
+      } 
+    }
+    @media(max-width:552px){
+        .video{
+        padding:5px;
+      }
+      .video iframe{
+        width:100%;
+        height:300px;
+    }
+    }
+
+</style>
+    <body>
+        <div class="logo text-center">
+            <a class="navbar-brand" href="#">
+                <svg height="50" viewBox="0 0 192 192" max-width="300" xmlns="http://www.w3.org/2000/svg">
+                <path d="m155.109 74.028a4 4 0 0 0 -3.48-2.028h-52.4l8.785-67.123a4.023 4.023 0 0 0 -7.373-2.614l-63.724 111.642a4 4 0 0 0 3.407 6.095h51.617l-6.962 67.224a4.024 4.024 0 0 0 7.411 2.461l62.671-111.63a4 4 0 0 0 .048-4.027z" /></svg>
+                Xpower
+            </a>
+        </div>
+       <!-- header -->
+       <div class="header">
+           <div class="container">
+               <div class="header-content">
+                   <h2>Mi reality is now
+                    <span style="color:#00c2e8;"> going virtual </span></h2>
+                    <p>Best in class virtual reality gear to make your everyday experience great. Go check it.</p>
+                    <a href="#" class="btn btn-primary">buy now</a>
+               </div>
+           </div>
+       </div>
+       <!-- end header-->
+
+       <div class="demo">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-4 mb-4">
+                      <a href="green/index.html"> <img src="demo/img/demo1.png" width="100%"/></a>
+                       <h4 style="color:#71c900;">demo 1</h4>
+                   </div>
+                   <div class="col-md-4 mb-4">
+                    <a href="blue/index.html"> <img src="demo/img/demo2.png" width="100%"/></a>
+                    <h4 style="color:#00bfe5;">demo 2</h4>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="yellow/index.html"> <img src="demo/img/demo3.png" width="100%"/></a>
+                    <h4 style="color:#f4e421;">demo 3</h4>
+                </div>
+               </div>
+           </div>
+       </div>
+       <!-- video -->
+       <div class="video">
+        <iframe src="https://www.youtube.com/embed/k8TnvGIOD_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+
+       <script>
+
+       </script>
+    </body>
+</html>
